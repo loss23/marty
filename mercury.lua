@@ -432,7 +432,7 @@ end
 function Library:create(options)
 
 	local settings = {
-		Theme = "DEV"
+		Theme = "PH"
 	}
 
 	if readfile and writefile and isfile then
