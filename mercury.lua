@@ -73,7 +73,7 @@ local Library = {
 		},
 		PH = {
 			Main = Color3.fromRGB(0, 0, 0),
-			Secondary = Color3.fromRGB(9, 9, 9),
+			Secondary = Color3.fromRGB(255, 115, 0),
 			Tertiary = Color3.fromRGB(255, 115, 0),
 
 			StrongText = Color3.fromHSV(255, 115, 0),		
