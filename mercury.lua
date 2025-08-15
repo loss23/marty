@@ -31,22 +31,6 @@ local HTTPService = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
-		Legacy = {
-			Main = Color3.fromHSV(262/360, 60/255, 34/255),
-			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
-			Tertiary = Color3.fromHSV(260/360, 60/255, 148/255),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Serika = {
-			Main = Color3.fromRGB(50, 52, 55),
-			Secondary = Color3.fromRGB(80, 82, 85),
-			Tertiary = Color3.fromRGB(226, 183, 20),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
 		Dark = {
 			Main = Color3.fromRGB(30, 30, 35),
 			Secondary = Color3.fromRGB(50, 50, 55),
@@ -55,41 +39,38 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Rust = {
-			Main = Color3.fromRGB(37, 35, 33),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(237, 94, 38),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Aqua = {
-			Main = Color3.fromRGB(19, 21, 21),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(51, 153, 137),
-
-			StrongText = Color3.fromHSV(0, 0, 1),        
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		PH = {
+		Hub = {
 			Main = Color3.fromRGB(0,0,0),
 			Secondary = Color3.fromRGB(9,9,9),
-			Tertiary = Color3.fromRGB(255,255,255),
+			Tertiary = Color3.fromRGB(255, 106, 0),
 
-			StrongText = Color3.fromHSV(255,255,255),		
-			WeakText = Color3.fromHSV(255,255,255)
+			StrongText = Color3.fromHSV(0.0526944, 0.992157, 1),		
+			WeakText = Color3.fromHSV(0.0916667, 0.705882, 1)
 		},
-		DEV = {
-			Main = Color3.fromRGB(228, 0, 0), -- Red
-			Secondary = Color3.fromRGB(57, 228, 0), -- Green
-			Tertiary = Color3.fromRGB(0, 11, 228), --Blue
+		Lunar = {
+			Main = Color3.fromRGB(57, 71, 90),
+			Secondary = Color3.fromRGB(64, 79, 90),
+			Tertiary = Color3.fromRGB(103, 123, 255),
 
-			StrongText = Color3.fromHSV(0,0,0), -- Black text
-			WeakText = Color3.fromHSV(255, 255, 255) -- White Text
+			StrongText = Color3.fromHSV(0.555556, 1, 1),		
+			WeakText = Color3.fromHSV(0.5, 0.333333, 1)
 		},
-		Vaporwave = {},
-		OperaGX = {},
-		VisualStudio = {}
+		Vaporwave = {
+			Main = Color3.fromRGB(17, 0, 42),
+			Secondary = Color3.fromRGB(100, 32, 168),
+			Tertiary = Color3.fromRGB(151, 41, 252),
+
+			StrongText = Color3.fromRGB(246, 225, 255),		
+			WeakText = Color3.fromRGB(246, 225, 255)
+		},
+		BloodMoon = {
+			Main = Color3.fromRGB(24, 24, 24),
+			Secondary = Color3.fromRGB(9,9,9),
+			Tertiary = Color3.fromRGB(255, 0, 0),
+
+			StrongText = Color3.fromHSV(0, 1, 1),		
+			WeakText = Color3.fromHSV(0, 1, 1)
+		},
 	},
 	ColorPickerStyles = {
 		Legacy = 0,
@@ -2784,11 +2765,11 @@ function Library:credit(options)
 			TextXAlignment = Enum.TextXAlignment.Left
 		})
 	end
-	
-	
+
+
 
 	if setclipboard then
-	
+
 		if options.Github then
 			local githubContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
@@ -2807,7 +2788,7 @@ function Library:credit(options)
 				setclipboard(options.Github)
 			end)
 		end
-	
+
 		if options.Discord then
 			local discordContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
