@@ -72,9 +72,9 @@ local Library = {
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		PH = {
-			Main = Color3.fromRGB(255, 115, 0),
-			Secondary = Color3.fromRGB(255, 115, 0),
-			Tertiary = Color3.fromRGB(255, 115, 0),
+			Main = Color3.fromRGB(0,0,0),
+			Secondary = Color3.fromRGB(9,9,9),
+			Tertiary = Color3.fromRGB(255,255,255),
 
 			StrongText = Color3.fromHSV(255, 115, 0),		
 			WeakText = Color3.fromHSV(255, 140, 45)
