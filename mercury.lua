@@ -79,6 +79,14 @@ local Library = {
 			StrongText = Color3.fromHSV(255, 115, 0),		
 			WeakText = Color3.fromHSV(255, 140, 45)
 		},
+		DEV = {
+			Main = Color3.fromRGB(228, 0, 0),
+			Secondary = Color3.fromRGB(57, 228, 0),
+			Tertiary = Color3.fromRGB(0, 11, 228),
+
+			StrongText = Color3.fromHSV(1,1,1),		
+			WeakText = Color3.fromHSV(0,0,0)
+		},
 		Vaporwave = {},
 		OperaGX = {},
 		VisualStudio = {}
@@ -424,7 +432,7 @@ end
 function Library:create(options)
 
 	local settings = {
-		Theme = "PH"
+		Theme = "DEV"
 	}
 
 	if readfile and writefile and isfile then
